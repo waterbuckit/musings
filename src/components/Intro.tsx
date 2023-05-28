@@ -21,7 +21,7 @@ const Intro = () => {
         every car park a shining mosaic.
 
         Long, radiant minutes,
-        your hand in my ahnd,
+        your hand in my hand,
         still warm, still warm.
 
         BY WENDY COPE
