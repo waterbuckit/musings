@@ -30,7 +30,7 @@ const MusingItem: FC<MusingItemProps> = ({ musing, isLoading }) => (
               {!isLoading && (
                 <time
                   dateTime={musing?.writtenAt.toLocaleDateString()}
-                  className="text-2xs/4 font-medium text-gray-500 dark:text-white/50 xl:hidden"
+                  className="text-2xs/4 font-medium text-white/50 xl:hidden"
                 >
                   {musing?.writtenAt.toLocaleDateString()}
                 </time>
