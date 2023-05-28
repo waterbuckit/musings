@@ -178,7 +178,7 @@ const StarField = () => {
       viewBox="0 0 881 211"
       fill="white"
       aria-hidden="true"
-      className="pointer-events-none absolute -right-44 top-32 w-[55.0625rem] origin-top-right rotate-[30deg] overflow-hidden opacity-70"
+      className="pointer-events-none absolute -right-10 top-32 w-[55.0625rem] origin-top-right rotate-[30deg] overflow-hidden opacity-70"
     >
       <defs>
         <filter id={blurId}>

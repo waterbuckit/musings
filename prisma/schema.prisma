@@ -16,6 +16,7 @@ model Musing {
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
     writtenAt DateTime @default(now())
+    author    String
     title     String
     body      String
 }

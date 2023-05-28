@@ -10,6 +10,23 @@ const Intro = () => {
         <span className="text-sky-300">Stella is a prodigy</span>. I{"'"}ll hear
         nothing to the contrary.
       </p>
+      <p className="mt-4 text-sm/6 text-gray-300 italic whitespace-pre">
+        {`
+        The book I've been reading
+        rests on my knee. You sleep.
+
+        It's beautiful out there -
+        fields, little lakes and winter trees
+        in February sunlight,
+        every car park a shining mosaic.
+
+        Long, radiant minutes,
+        your hand in my ahnd,
+        still warm, still warm.
+
+        BY WENDY COPE
+        `}
+      </p>
     </>
   );
 };

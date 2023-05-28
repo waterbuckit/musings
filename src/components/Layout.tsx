@@ -67,10 +67,10 @@ const Glow = () => {
 
 const FixedSidebar: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <div className="relative flex-none overflow-hidden px-6 lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0">
-      <div className="hidden border-r border-slate-800 lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]">
-        <span className="font-mono text-slate-200">Written by</span>
-        <span className="mt-6 flex gap-6 font-bold text-white">
+    <div className="relative flex-none overflow-hidden lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0">
+      <div className="p-4 border-b lg:border-r border-slate-800 lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]">
+        <span className="font-mono text-slate-200">Writing by</span>
+        <span className="lg:mt-6 m-3 flex gap-6 font-bold text-white">
           Adam Royal
           <span aria-hidden="true" className="text-slate-200">
             /
@@ -79,7 +79,7 @@ const FixedSidebar: FC<{ children: ReactNode }> = ({ children }) => {
         </span>
       </div>
       <Glow />
-      <div className="relative flex w-full lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] lg:overflow-y-auto lg:overflow-x-hidden lg:pl-[max(4rem,calc(50%-38rem))]">
+      <div className="relative px-6 flex w-full lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] lg:overflow-y-auto lg:overflow-x-hidden lg:pl-[max(4rem,calc(50%-38rem))]">
         <div className="mx-auto max-w-lg lg:mx-0 lg:flex lg:w-96 lg:max-w-none lg:flex-col  lg:before:pt-6">
           <div className="pb-16 pt-20 sm:pb-20 sm:pt-32 lg:py-20">
             <div className="relative">
