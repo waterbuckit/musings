@@ -8,7 +8,7 @@ const prisma = new PrismaClient()
 const musingImportSchema = z.object({
   title: z.string(),
   body: z.string(),
-  writtenAt: z.date(),
+  writtenAt: z.string().datetime(),
   author: z.string().refine((val) => val === 'Adam' || val === 'Stella'),
 }).array();
 
@@ -18,9 +18,10 @@ const main = () => {
   }
 
   // validate seed path data
-  const data = fs.readFileSync('path/to/file.txt', 'utf-8');
+  const data = fs.readFileSync(conf.seedPath, 'utf-8');
 
   const musings = musingImportSchema.parse(JSON.parse(data));
+  console.log(musings)
 
   return Promise.all(
     musings.map(async (musing) => {
